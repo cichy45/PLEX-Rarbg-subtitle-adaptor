@@ -38,3 +38,17 @@ $files = Get-ChildItem -File -Recurse "$filePath"
 				}
 			}
         }
+
+$filePath = Get-Location
+
+$folders = Get-ChildItem -Recurse -Directory $filePath
+
+foreach($file in $folders)  {
+if($file.FullName -like "*Subs*") {
+$subs = Get-ChildItem -Recurse -File $file.FullName
+Move-Item -Filter *.srt -Path $subs.FullName -Destination $file.Parent.FullName
+} 
+}
+
+$dirs = gci "$filePath" -directory -recurse | Where { (gci $_.fullName).count -eq 0 } | select -expandproperty FullName
+$dirs | Foreach-Object { Remove-Item $_ }
