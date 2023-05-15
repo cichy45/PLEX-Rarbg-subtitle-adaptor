@@ -7,52 +7,8 @@ It will rename all English, German, Polish subtitles with addition of .eng/.ger/
 It will move remaining subtitles one foler up (from Subs folder one up) and delete empty folder.
 
 In othe words, before:
-
-
-E:\Folder_główny
-│
-├── adapt_v2.ps1
-│
-├── Empire.of.the.Sharks.2017.1080p.BluRay.H264.AAC-RARBG
-│   ├── Empire.of.the.Sharks.2017.1080p.BluRay.H264.AAC-RARBG.mp4
-│   ├── RARBG.txt
-│   ├── RARBG_DO_NOT_MIRROR.exe
-│   └── Subs
-│       ├── 2_English.srt
-│       ├── 4_Polish.srt
-│       └── 6_Portugal.srt
-│
-├── Jurassic.Shark.2012.1080p.BluRay.H264.AAC-RARBG
-│   ├── Jurassic.Shark.2012.1080p.BluRay.H264.AAC-RARBG.mp4
-│   ├── RARBG.txt
-│   └── Subs
-│       └── 2_German.srt
-│
-└── Mimic.2.2001.1080p.BluRay.x265-RARBG
-    ├── Mimic.2.2001.1080p.BluRay.x265-RARBG.mp4
-    ├── RARBG.txt
-    ├── RARBG_DO_NOT_MIRROR.exe
-    └── Subs
-        ├── 2_English.srt
-        ├── 4_Polish.srt
-        └── 8_Russian.srt
+![Zrzut ekranu 2023-05-15 112545](https://github.com/cichy45/PLEX-Rarbg-subtitle-adaptor/assets/86913474/0939b6c8-cdf7-4929-a095-70e1981dece0)
 
 After:
+![Zrzut ekranu 2023-05-15 112556](https://github.com/cichy45/PLEX-Rarbg-subtitle-adaptor/assets/86913474/7b3913d0-5f8f-42f5-b28b-16d447e29840)
 
-E:\Folder_główny
-│
-├── adapt_v2.ps1
-│
-├── Empire.of.the.Sharks.2017.1080p.BluRay.H264.AAC-RARBG
-│   ├── 2_English.eng.srt
-│   ├── 4_Polish.pol.srt
-│   └── Empire.of.the.Sharks.2017.1080p.BluRay.H264.AAC-RARBG.mp4
-│
-├── Jurassic.Shark.2012.1080p.BluRay.H264.AAC-RARBG
-│   ├── 2_German.ger.srt
-│   └── Jurassic.Shark.2012.1080p.BluRay.H264.AAC-RARBG.mp4
-│
-└── Mimic.2.2001.1080p.BluRay.x265-RARBG
-    ├── 2_English.eng.srt
-    ├── 4_Polish.pol.srt
-    └── Mimic.2.2001.1080p.BluRay.x265-RARBG.mp4
